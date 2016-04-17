@@ -1,0 +1,36 @@
+It don't meet the output requirements.
+Input: ANY
+Real Output: Welcome tomas hruso. You are 190cm long and your weight is 90kg.
+Expected Output: You are called tomas hruso.  You are 156cm long and your weight is 65kg.
+-----
+This happens only once.
+Input: http://goalsec.com/software_quality/index.php?firstname=100*23&lastname=23*456
+Real Output: Welcome 100*23 . You are 164cm long and your weight is 68kg.
+Expected Output: Welcome 100*23 23*456 . You are 164cm long and your weight is 68kg.
+-----
+This is doing of a browser.
+http://goalsec.com/software_quality/index.php?firstname=blabla+++blabla&lastname=HOJ
+Real Outup: Welcome blabla blabla HOJ. You are 178cm long and your weight is 78kg.
+Expected Output: Welcome blabla   blabla HOJ. You are 178cm long and your weight is 78kg.
+-----
+Velmi casto dostavam vahu ako hodnotu o 100 mensiu ako vysku. Chcelo by to lepsiu nahodnost.
+-----
+http://goalsec.com/software_quality/index.php?firstname=%3Cb%3Etomas%3C%2Fb%3E&lastname=%3Ci%3Ehruso%3C%2Fi%3E
+Firstname: <b>tomas</b>
+Lastname : <i>hruso</i>
+Real Output: Welcome tomas hruso. You are 140cm long and your weight is 77kg. (tomas tucne a hruso kurzivou)
+Expected Output: Welcome <b>tomas</b> <i>hruso</i>. You are 140cm long and your weight is 77kg.
+-----
+http://goalsec.com/software_quality/index.php?firstname=%3Cscript%3Ealert%28%27ahoj%27%29%3B%3C%2Fscript%3E&lastname=
+Firstname: <script>alert('ahoj')</script>
+Lastname : 
+Real Output: Welcome . You are 170cm long and your weight is 70kg. (with alert)
+Expected Output: Welcome <script>alert('ahoj')</script>. You are 170cm long and your weight is 70kg.
+-----
+With last 2 bugs, we can inject any javascript to page. Realy dangerous bug.
+http://goalsec.com/software_quality/index.php?firstname=%26%23222&lastname=%26%23222%3B
+Firstname: &#222
+Lastname: &#222;
+Real output: Welcome Þ Þ. You are 146cm long and your weight is 80kg.
+Expected output: Welcome &#222 &#222;. You are 146cm long and your weight is 80kg.
+-----
