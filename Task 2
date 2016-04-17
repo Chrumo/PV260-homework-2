@@ -1,0 +1,57 @@
+Attributes:
+1. Fast
+2. Secure
+3. Testable
+4. Cross-browser supported
+5. Multicultural
+6. Maintainable
+7. Persistent
+
+Components:
+1. Registration
+2. Configuration of products
+3. Display of products
+4. Error logging
+5. Display of errors
+6. 24/7 online support
+7. Reclamation
+8. Configuration of payment
+9. Contact us with map
+10. Display of shopping cart
+11. Filter products
+
+Capabilities for (Fast, Registration):
+1. Registration will not last longer than 5 seconds even on slower internet connection.
+2. Registration will use algorithm with complexity no more than O(n^20).
+3. When user clicks Registrate button. Immediately show user loading spinner.
+
+Other capabilities:
+1. Connection must be HTTPS secure.
+2. No loading should take more than 10 second on slower internet connection.
+3. Once product is added to system, it must be seen until deleted.
+4. When adding product with time, timezone has to be corrected.
+5. Site must support at least 45 world languages with at least 2 with right to left reading.
+6. Filtering of product must be possible with all products attributes. When possible(like with price) there will be an range filter.
+7. 24/7 online support must be at least in English, Chinese, Russian and Spanish.
+8. User must have opportunity to choose (na dobierku, neviem ako sa to povie po anglicky) or card payment.
+9. Display of errors must be same in all browsers.
+10. Source of map must be Apple maps for Apple users, Google maps for all others and possibility to switch between these two.
+
+Test cases for 9. Display of errors must be same in all browsers.
+1. Go to https://eshop.com/login and leave email and password blank and see in google chrome, firefox, opera, safari and internet explorer if it shows exactly the same error, also in same style.
+2. Go to https://eshop.com/login and type in email: "adolf.abasta@example.com" and leave password blank and see in google chrome, firefox, opera, safari and internet explorer if it shows exactly the same error, also in same style.
+3. Go to https://eshop.com/login and type in email: "adolf.abastaexample.com" and password: "Password0" and see in google chrome, firefox, opera, safari and internet explorer if it shows exactly the same error, also in same style.
+
+Most risky places:
+1. Your product will make you being killed/murdered.
+2. Your product will kill or harm others.
+3. Your product will suddenly need to be shut down because lawsuits from customers - not behaving due to Terms and Conditions.
+4. Your product will suddenly need to be shut down lawsuits from competitors - incorrect patent usage.
+5. Your product will not have ambition to be successful because people will not want to use it (not easy to use, competitors are better, missing some core functionality, ...).
+6. Your product will annoy its users because obvious bug too long not being fixed. 
+
+Why?
+1. When it comes to money and buying something, people are like animals. They can kill for it. So I choosed 1 and 2.
+2. Everybody makes mistakes. So I choosed 3 and 4.
+3. There are milions of eshops on Internet. Se there is a change our eshop will not be as popular as we think it would be. So I choosed 5.
+4. This is the less most risky place. But it is possible that we won't find it and for user it will be too obvious to report it. So it will be hanging there like nothing happening. So I choosed 6.
